@@ -94,17 +94,27 @@
 
       .section-link {
         display: inline-block;
-        padding: 8px 12px;
-        border-radius: 8px;
+        padding: 3px 7px;
+        border-radius: 6px;
         background: #005A9C;
         color: white;
         font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.2;
         text-decoration: none;
         transition: background 0.2s ease;
       }
 
       .section-link:hover {
         background: #00467a;
+      }
+
+      @media (max-width: 480px) {
+        .section-link {
+          padding: 2px 6px;
+          font-size: 0.72rem;
+          border-radius: 5px;
+        }
       }
 
       button {
