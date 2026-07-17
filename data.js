@@ -169,7 +169,7 @@ const storeMap = {
 
     "1": "E",
     "6": "E",
-    "10": "E",
+    "10": "Store10SaltySnacks",
     "30": "E",
     "32": "E",
     "34": "E",

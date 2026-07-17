@@ -9,7 +9,17 @@
         <div class="content-card">
             <h1 id="storeTitle"></h1>
             <p id="storeMessage" class="store-message"></p>
-            <img id="storeImage" alt="Store image">
+            <div class="image-section">
+                <a id="storeImageLink" href="#" target="_blank" rel="noopener noreferrer" style="display:none; text-decoration:none;">
+                    <img id="storeImage" alt="Store image">
+                </a>
+                <a id="nineFootLink" class="section-link" href="./image-viewer.html?image=Store109ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">9ft</a>
+                <a id="fiveFootLink" class="section-link" href="./image-viewer.html?image=Store105ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">5ft</a>
+                <a id="twentyoneFootLink" class="section-link" href="./image-viewer.html?image=Store1021ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">21ft</a>
+                <a id="elevenFootLink" class="section-link" href="./image-viewer.html?image=Store1011ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">11ft</a>
+                <a id="eightFootLink" class="section-link" href="./image-viewer.html?image=Store108ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">8ft</a>
+                <a id="twoFootLink" class="section-link" href="./image-viewer.html?image=Store102ft.png&return=store.html%3Fstore%3D10" target="_blank" rel="noopener noreferrer" style="display:none;">2ft</a>
+            </div>
             <button onclick="goBack()">Back to Store Finder</button>
         </div>
     </div>
@@ -65,9 +75,34 @@
         display: block;
         width: 100%;
         max-width: 1200px;
-        margin: 0 auto 18px;
+        margin: 0 auto;
         border-radius: 12px;
         border: 1px solid #e5e7eb;
+      }
+
+      .image-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .section-link {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: #005A9C;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background 0.2s ease;
+      }
+
+      .section-link:hover {
+        background: #00467a;
       }
 
       button {
