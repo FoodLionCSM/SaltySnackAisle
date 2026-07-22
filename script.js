@@ -61,12 +61,32 @@ const imageLink = document.getElementById("storeImageLink");
 const eightFootLink = document.getElementById("eightFootLink");
 const elevenFootLink = document.getElementById("elevenFootLink");
 const twentyoneFootLink = document.getElementById("twentyoneFootLink");
+const eighteenFootLink = document.getElementById("eighteenFootLink");
+const twentyfourFootlink = document.getElementById("twentyfourFootLink")
 const fiveFootLink = document.getElementById("fiveFootLink");
+const fourFootLink = document.getElementById("fourFootLink");
+const sevenFootLink = document.getElementById("sevenFootLink");
 const nineFootLink = document.getElementById("nineFootLink");
+const eightFootLinkAlt = document.getElementById("eightFootLinkAlt");
 const twoFootLink = document.getElementById("twoFootLink");
+
+const linkElements = [
+  { element: nineFootLink, defaultLabel: "9ft" },
+  { element: fiveFootLink, defaultLabel: "5ft" },
+  { element: twentyoneFootLink, defaultLabel: "21ft" },
+  { element: eighteenFootLink, defaultLabel: "18ft" },
+  { element: twentyfourFootLink, defaultLabel: "24ft" },
+  { element: sevenFootLink, defaultLabel: "7ft"},
+  { element: fourFootLink, defaultLabel: "4ft"},
+  { element: elevenFootLink, defaultLabel: "11ft" },
+  { element: eightFootLink, defaultLabel: "8ft" },
+  { element: eightFootLinkAlt, defaultLabel: "8ft" },
+  { element: twoFootLink, defaultLabel: "2ft" }
+];
 
 const message = document.getElementById("storeMessage");
 const bottomImage = document.querySelector("img.bottom");
+const imageSection = document.querySelector(".image-section");
 
 if (bottomImage) {
   loadImageWithFallback(bottomImage, "updatedFLGraphicPNG.png");
@@ -84,21 +104,77 @@ if (store) {
     image.style.display = "block";
     message.style.display = "none";
 
-    if (store === "10") {
-      eightFootLink.style.display = "inline";
-      elevenFootLink.style.display = "inline";
-      twentyoneFootLink.style.display = "inline";
-      fiveFootLink.style.display = "inline";
-      nineFootLink.style.display = "inline";
-      twoFootLink.style.display = "inline";
+    const storeSpecificLinks = {
+      "10": [
+        { element: nineFootLink, label: "9ft", image: "9ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftA.png" },
+        { element: twentyoneFootLink, label: "21ft", image: "21ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" }
+      ],
+      "1047": [
+        { element: nineFootLink, label: "7ft", image: "7ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftA.png" },
+        { element: twentyoneFootLink, label: "19ft", image: "19ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" }
+      ],
+      "2666": [
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: twentyfourFootLink, label: "24ft", image: "24ftA.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftA.png" },
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" }
+      ],
+      "685": [
+        { element: eightFootLink, label: "8ft", image: "8ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftB.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
+        { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftB.png" }
+      ],
+      "2808": [
+        { element: nineFootLink, label: "9ft", image: "9ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftB.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftB.png" },
+        { element: twentyoneFootLink, label: "21ft", image: "21ftB.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
+        { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" }
+      ]
 
-    } else {
-      eightFootLink.style.display = "none";
-      elevenFootLink.style.display = "none";
-      twentyoneFootLink.style.display ="none";
-      fiveFootLink.style.display ="none";
-      nineFootLink.style.display ="none";
-      twoFootLink.style.display ="none";
+    };
+
+    const activeLinkConfig = storeSpecificLinks[store] || null;
+
+    linkElements.forEach(({ element, defaultLabel }) => {
+      element.textContent = defaultLabel;
+      element.style.display = "none";
+      element.href = "#";
+    });
+
+    if (activeLinkConfig) {
+      activeLinkConfig.forEach(({ element, label, image }, index) => {
+        element.textContent = label;
+        element.href = `./image-viewer.html?image=${encodeURIComponent(image)}&return=${encodeURIComponent(`store.html?store=${store}`)}`;
+        element.style.display = "inline";
+        element.style.order = String(index + 1);
+      });
+
+      if (imageSection) {
+        const activeElementOrder = activeLinkConfig.map(({ element }) => element);
+        const originalFirstLink = imageSection.querySelector(".section-link");
+
+        if (originalFirstLink) {
+          activeElementOrder.forEach((element) => {
+            if (element && element !== originalFirstLink) {
+              imageSection.appendChild(element);
+            }
+          });
+        }
+      }
     }
   } else {
     title.textContent = "Store Not Found";
