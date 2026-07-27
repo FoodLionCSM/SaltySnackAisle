@@ -139,10 +139,10 @@ if (store) {
       "2808": [
         { element: nineFootLink, label: "9ft", image: "9ftB.png" },
         { element: fiveFootLink, label: "5ft", image: "5ftB.png" },
-        { element: twoFootLink, label: "2ft", image: "2ftB.png" },
         { element: twentyoneFootLink, label: "21ft", image: "21ftB.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
-        { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" }
+        { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftB.png" }
       ]
 
     };
