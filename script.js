@@ -69,6 +69,8 @@ const sevenFootLink = document.getElementById("sevenFootLink");
 const nineFootLink = document.getElementById("nineFootLink");
 const eightFootLinkAlt = document.getElementById("eightFootLinkAlt");
 const twoFootLink = document.getElementById("twoFootLink");
+const threeFootLink = document.getElementById("threeFootLink");
+const twentyFootLink = document.getElementById("twentyFootLink");
 
 const linkElements = [
   { element: nineFootLink, defaultLabel: "9ft" },
@@ -81,7 +83,9 @@ const linkElements = [
   { element: elevenFootLink, defaultLabel: "11ft" },
   { element: eightFootLink, defaultLabel: "8ft" },
   { element: eightFootLinkAlt, defaultLabel: "8ft" },
-  { element: twoFootLink, defaultLabel: "2ft" }
+  { element: twoFootLink, defaultLabel: "2ft" },
+  { element: threeFootLink, defaultLabel: "3ft" },
+  { element: twentyFootLink, defaultLabel: "20ft" }
 ];
 
 const message = document.getElementById("storeMessage");
@@ -143,6 +147,20 @@ if (store) {
         { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
         { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" },
         { element: twoFootLink, label: "2ft", image: "2ftB.png" }
+      ],
+      "2654": [
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: twentyFootLink, label: "20ft", image: "20ftA.png" },
+        { element: threeFootLink, label: "3ft", image: "3ftA.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftB.png" }
+      ],
+      "1534": [
+        { element: sevenFootLink, label: "7ft", image: "7ftB.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftC.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftB.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftB.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
       ]
 
     };
