@@ -74,7 +74,10 @@ const twentyFootLink = document.getElementById("twentyFootLink");
 const sixFootLink = document.getElementById("sixFootLink");
 const seventeenFootLink = document.getElementById("seventeenFootLink");
 const nineteenFootLink = document.getElementById("nineteenFootLink");
-
+const twentyfiveFootLink = document.getElementById("twentyfiveFootLink");
+const twentytwoFootLink = document.getElementById("twentytwoFootLink");const twentysevenFootLink = document.getElementById("twentysevenFootLink");
+const eightFootLinkAlt2 = document.getElementById("eightFootLinkAlt2");
+const fiveFootLinkAlt = document.getElementById("fiveFootLinkAlt");
 const linkElements = [
   { element: nineFootLink, defaultLabel: "9ft" },
   { element: fiveFootLink, defaultLabel: "5ft" },
@@ -91,7 +94,12 @@ const linkElements = [
   { element: twentyFootLink, defaultLabel: "20ft" },
   { element: sixFootLink, defaultLabel: "6ft" },
   { element: seventeenFootLink, defaultLabel: "17ft" },
-  { element: nineteenFootLink, defaultLabel: "19ft" }
+  { element: nineteenFootLink, defaultLabel: "19ft" },
+  { element: twentyfiveFootLink, defaultLabel: "25ft" },
+  { element: twentytwoFootLink, defaultLabel: "22ft" },
+  { element: eightFootLinkAlt2, defaultLabel: "8ft" },
+  { element: twentysevenFootLink, defaultLabel: "27ft" },
+  { element: fiveFootLinkAlt, defaultLabel: "5ft" }
 ];
 
 const message = document.getElementById("storeMessage");
@@ -199,6 +207,147 @@ if (store) {
         { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: fourFootLink, label: "4ft", image: "4ftD.png" },
         { element: eightFootLinkAlt, label: "8ft", image: "8ftE.png" }
+      ],
+      "2608": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: twentyfiveFootLink, label: "25ft", image: "25ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: nineFootLink, label: "9ft", image: "9ftC.png" }
+      ],
+      "364": [
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentytwoFootLink, label: "22ft", image: "22ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "841": [
+        { element: sixFootLink, label: "6ft", image: "6ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyfourFootLink, label: "24ft", image: "24ftB.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" }
+      ],
+      "552": [
+        { element: sixFootLink, label: "6ft", image: "6ftB.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: seventeenFootLink, label: "17ft", image: "17ftB.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "235": [
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: twentytwoFootLink, label: "22ft", image: "22ftB.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftC.png" }
+      ],
+      "1057": [
+        { element: nineFootLink, label: "9ft", image: "9ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyfiveFootLink, label: "25ft", image: "25ftB.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLinkAlt2, label: "8ft", image: "8ftF.png" }
+      ],
+      "2627": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: threeFootLink, label: "3ft", image: "3ftA.png" },
+        { element: sixFootLink, label: "6ft", image: "6ftB.png" }
+      ],
+      "707": [
+        { element: eightFootLinkAlt2, label: "8ft", image: "8ftE.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentysevenFootLink, label: "27ft", image: "27ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" }
+      ],
+      "1415": [
+        { element: nineFootLink, label: "9ft", image: "9ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyfiveFootLink, label: "25ft", image: "25ftC.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "1262": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: nineteenFootLink, label: "19ft", image: "19ftB.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" }
+      ],
+      "797": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: nineteenFootLink, label: "19ft", image: "19ftB.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: eightFootLinkAlt2, label: "8ft", image: "8ftE.png" }
+      ],
+      "518": [
+        { element: fourFootLink, label: "4ft", image: "4ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftC.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "980": [
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: nineteenFootLink, label: "19ft", image: "19ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "1150": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftD.png" },
+        { element: twentyFootLink, label: "20ft", image: "20ftC.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftE.png" },
+        { element: eightFootLinkAlt, label: "8ft", image: "8ftB.png" }
+      ],
+      "912": [
+        { element: fiveFootLink, label: "5ft", image: "5ftC.png" },
+        { element: fiveFootLinkAlt, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyoneFootLink, label: "21ft", image: "21ftC.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "803": [
+        { element: sixFootLink, label: "6ft", image: "6ftB.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyoneFootLink, label: "21ft", image: "21ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "2118": [
+        { element: sevenFootLink, label: "7ft", image: "7ftC.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftE.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftE.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "930": [
+        { element: eightFootLink, label: "8ft", image: "8ftE.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentytwoFootLink, label: "22ft", image: "22ftC.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLinkAlt2, label: "8ft", image: "8ftF.png" }
       ]
 
     };
