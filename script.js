@@ -144,6 +144,7 @@ if (store) {
       "1047": [
         { element: nineFootLink, label: "7ft", image: "7ftA.png" },
         { element: fiveFootLink, label: "5ft", image: "5ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: twentyoneFootLink, label: "19ft", image: "19ftA.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
         { element: eightFootLink, label: "8ft", image: "8ftA.png" },
@@ -159,6 +160,7 @@ if (store) {
       "685": [
         { element: eightFootLink, label: "8ft", image: "8ftB.png" },
         { element: fiveFootLink, label: "5ft", image: "5ftB.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: eighteenFootLink, label: "18ft", image: "18ftA.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftB.png" },
         { element: eightFootLinkAlt, label: "8ft", image: "8ftA.png" },
@@ -305,6 +307,21 @@ if (store) {
         { element: twentyfourFootLink, label: "24ft", image: "24ftC.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
         { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "554": [
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentythreeFootLink, label: "23ft", image: "23ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" }
+      ],
+      "2126": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: nineteenFootLink, label: "19ft", image: "19ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" }
       ],
       "755": [
         { element: sevenFootLink, label: "7ft", image: "7ftA.png" },
