@@ -74,9 +74,13 @@ const threeFootLink = document.getElementById("threeFootLink");
 const twentyFootLink = document.getElementById("twentyFootLink");
 const sixFootLink = document.getElementById("sixFootLink");
 const seventeenFootLink = document.getElementById("seventeenFootLink");
+const sixteenFootLink = document.getElementById("sixteenFootLink");
 const nineteenFootLink = document.getElementById("nineteenFootLink");
+const twelveFootLink = document.getElementById("twelveFootLink");
+const twelveFootLinkAlt = document.getElementById("twelveFootLinkAlt");
 const twentyfiveFootLink = document.getElementById("twentyfiveFootLink");
 const twentytwoFootLink = document.getElementById("twentytwoFootLink");const twentysevenFootLink = document.getElementById("twentysevenFootLink");
+const twentythreeFootLink = document.getElementById("twentythreeFootLink");
 const eightFootLinkAlt2 = document.getElementById("eightFootLinkAlt2");
 const fiveFootLinkAlt = document.getElementById("fiveFootLinkAlt");
 const linkElements = [
@@ -96,9 +100,13 @@ const linkElements = [
   { element: twentyFootLink, defaultLabel: "20ft" },
   { element: sixFootLink, defaultLabel: "6ft" },
   { element: seventeenFootLink, defaultLabel: "17ft" },
+  { element: sixteenFootLink, defaultLabel: "16ft" },
   { element: nineteenFootLink, defaultLabel: "19ft" },
+  { element: twelveFootLink, defaultLabel: "12ft" },
+  { element: twelveFootLinkAlt, defaultLabel: "12ft" },
   { element: twentyfiveFootLink, defaultLabel: "25ft" },
   { element: twentytwoFootLink, defaultLabel: "22ft" },
+  { element: twentythreeFootLink, defaultLabel: "23ft" },
   { element: eightFootLinkAlt2, defaultLabel: "8ft" },
   { element: twentysevenFootLink, defaultLabel: "27ft" },
   { element: fiveFootLinkAlt, defaultLabel: "5ft" }
@@ -319,6 +327,22 @@ if (store) {
         { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: twentyfourFootLink, label: "24ft", image: "24ftB.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftA.png" }
+      ],
+      "1371": [
+        { element: sixFootLink, label: "6ft", image: "6ftB.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: sixteenFootLink, label: "16ft", image: "16ftA.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: eightFootLink, label: "8ft", image: "8ftC.png" }
+      ],
+      "1386": [
+        { element: twelveFootLink, label: "12ft", image: "12ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: twentyfiveFootLink, label: "25ft", image: "25ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
+        { element: twelveFootLinkAlt, label: "12ft", image: "12ftB.png" }
       ],
       "552": [
         { element: sixFootLink, label: "6ft", image: "6ftB.png" },
