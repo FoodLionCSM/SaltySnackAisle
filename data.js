@@ -261,6 +261,7 @@ const storeMap = {
     "1347": "Store1347Salty",
     "1353": "Store1353Salty",
     "1355": "Store1355Salty",
+    "2266": "Store2266Salty",
     "1359": "Store1359Salty",
     "1360": "Store1360Salty",
     "1360" : "Store1360Salty",

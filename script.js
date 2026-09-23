@@ -283,10 +283,10 @@ if (store) {
       "10": [
         { element: nineFootLink, label: "9ft", image: "9ftA.png" },
         { element: fiveFootLink, label: "5ft", image: "5ftA.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: twentyoneFootLink, label: "21ft", image: "21ftA.png" },
         { element: elevenFootLink, label: "11ft", image: "11ftA.png" },
-        { element: eightFootLink, label: "8ft", image: "8ftA.png" },
-        { element: twoFootLink, label: "2ft", image: "2ftA.png" }
+        { element: eightFootLink, label: "8ft", image: "8ftA.png" }
       ],
       "1047": [
         { element: nineFootLink, label: "7ft", image: "7ftA.png" },
@@ -692,6 +692,29 @@ if (store) {
         { element: twoFootLink, label: "2ft", image: "2ftA.png" },
         { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
         { element: sevenFootLink, label: "7ft", image: "7ftA.png" }
+      ],
+      "1355": [
+        { element: eightFootLink, label: "8ft", image: "8ftD.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: twentythreeFootLink, label: "23ft", image: "23ftE.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fourFootLink, label: "4ft", image: "4ftD.png" },
+        { element: eightFootLinkAlt, label: "8ft", image: "8ftE.png" }
+      ],
+      "2266": [
+        { element: eightFootLink, label: "8ft", image: "8ftM.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftC.png" },
+        { element: nineteenFootLink, label: "19ft", image: "19ftP.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: sevenFootLink, label: "7ft", image: "7ftA.png" }
+      ],
+      "2590": [
+        { element: eightFootLink, label: "8ft", image: "8ftE.png" },
+        { element: fiveFootLink, label: "5ft", image: "5ftD.png" },
+        { element: twoFootLink, label: "2ft", image: "2ftA.png" },
+        { element: eighteenFootLink, label: "18ft", image: "18ftH.png" },
+        { element: elevenFootLink, label: "11ft", image: "11ftA.png" }
       ],
       "797": [
         { element: eightFootLink, label: "8ft", image: "8ftD.png" },
